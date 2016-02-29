@@ -5,26 +5,28 @@ var count = 1;
 
 app.use(express.static('public'));
 
+var setRoutes = function(req, res, next) {
+    for (var num in urlsObj) {
+        console.log(urlsObj[num]);
+        app.get('/' + num, function(req, res) {
+            res.redirect(urlsObj[num])
+        });
+    }
+    next();
+}
 
+app.use(setRoutes);
 
 app.get('/new/:url(*)', function(req, res) {
    var requestUrl = req.hostname;
    var url = req.params.url;
-   count += "";
    urlsObj[count] = url;
    
-   for (var num in urlsObj) {
-        console.log(urlsObj[num]);
-    app.get('/' + num, function(req, res) {
-        res.redirect(urlsObj[num]);
-    });
-}
-   
-   res.send({
+    res.send({
        original_url: url,
        short_url: requestUrl + "/" + count,
        obj: urlsObj
-   });
+    });
 });
 
 
