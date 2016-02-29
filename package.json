@@ -1,0 +1,22 @@
+{
+  "name": "url-shortener-ms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asell22/urr-shortener-microservice.git"
+  },
+  "author": "Alex Sell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asell22/urr-shortener-microservice/issues"
+  },
+  "homepage": "https://github.com/asell22/urr-shortener-microservice#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
