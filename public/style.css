@@ -9,3 +9,13 @@ li {
     font-size: 22px;
     font-weight: 500;
 }
+
+.examples {
+    margin-top: 50px;
+}
+
+.examples > p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
