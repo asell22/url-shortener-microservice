@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/asell22/urr-shortener-microservice.git"
   },
+  "engines": {
+    "node": "4.2.4"
+  },
   "author": "Alex Sell",
   "license": "ISC",
   "bugs": {

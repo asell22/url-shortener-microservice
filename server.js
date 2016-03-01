@@ -10,7 +10,6 @@ app.use(express.static('public'));
 
 var setRoutes = function(req, res, next) {
     for (var num in urlsObj) {
-        console.log(urlsObj[num]);
         app.get('/' + num, function(req, res) {
             res.redirect(urlsObj[num]);
         });
@@ -22,7 +21,6 @@ app.use(setRoutes);
 
 app.get('/:num', function(req, res) {
     var num = req.params.num;
-    console.log(keys);
     if (keys.indexOf(num * 1) === -1) {
         res.status('404').send({error: "No such url exists"});
     } else {
