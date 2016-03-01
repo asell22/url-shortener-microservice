@@ -42,8 +42,7 @@ app.get('/new/:url(*)', function(req, res, next) {
  
         res.send({
             original_url: url,
-            short_url: short_url,
-            obj: urlsObj
+            short_url: short_url
         });
     
         next(); 
