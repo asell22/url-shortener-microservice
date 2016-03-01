@@ -63,6 +63,6 @@ app.use(incrementCount);
 
 
 
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(process.env.PORT, function() {
     console.log("Server running on ", process.env.PORT);
 });
